@@ -1,0 +1,18 @@
+{
+  "hosting": {
+  	"site": "photogram-c75b8",
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "index.html"
+      }
+    ],
+    "predeploy": ["npm run build"]
+  }
+}
